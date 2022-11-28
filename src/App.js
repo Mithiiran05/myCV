@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="app">
-      <Router basename={'/myCV'}>
+      <Router basename={'smyCV'}>
         <ScrollToTop/>
         <Switch>
           <Route path={"${process.env.PUBLIC_URL}/"} exact component={Main} />

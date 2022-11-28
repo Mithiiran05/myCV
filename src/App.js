@@ -18,12 +18,12 @@ function App() {
 
   return (
     <div className="app">
-      <Router>
+      <Router basename={'myCV'}>
         <ScrollToTop/>
         <Switch>
-          <Route path="/" exact component={Main} />
-          <Route path="/blog" exact component={BlogPage} />
-          <Route path="/projects" exact component={ProjectPage} />
+          <Route path={"${process.env.PUBLIC_URL}/"} exact component={Main} />
+          <Route path={"${process.env.PUBLIC_URL}/blog"} exact component={BlogPage} />
+          <Route path={"${process.env.PUBLIC_URL}/projects"} exact component={ProjectPage} />
 
           <Redirect to="/" />
         </Switch>

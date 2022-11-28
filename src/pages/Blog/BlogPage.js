@@ -74,7 +74,7 @@ function BlogPage() {
                 <title>{headerData.name} | Blog</title>
             </Helmet>
             <div className="blogPage--header" style={{backgroundColor: theme.primary}}>
-                <Link to="/">
+            <Link to={"${process.env.PUBLIC_URL}/"}>
                     <AiOutlineHome className={classes.home}/>
                 </Link>
                 <h1 style={{color: theme.secondary}}>Blogs</h1>

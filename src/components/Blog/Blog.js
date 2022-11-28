@@ -65,7 +65,7 @@ function Blog() {
 
                         {blogData.length > 3 && (
                             <div className="blog--viewAll">
-                                <Link to="/blog">
+                                <Link to={"${process.env.PUBLIC_URL}/blog"}>
                                     <button className={classes.viewAllBtn}>
                                         View All
                                         <HiArrowRight className={classes.viewArr} />
